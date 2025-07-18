@@ -244,7 +244,7 @@ function Signup() {
     if (validateStep3()) {
       try {
         const res = await axios.post(
-          `${apiUrl}/auth/signup`,
+          `${apiUrl}/user/signup`,
           formData,
           {
             headers: {
